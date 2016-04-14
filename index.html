@@ -95,10 +95,21 @@
 				<section>
 					<section>
 						<h2>Recurrent population models</h2>
-					</section>
-					<section>
 
 					</section>
+					<section>
+						<p>
+							Dynamics of sparsely connected networks of excitatory and and inhibitory spiking neurons (Brunel 2000)
+						</p>
+					</section>
+					<section>
+							<p>TODO: Find pretty pictures (and see Chapter 13)</p>
+							<p>Fokker Planck equation</p>
+							<div id="fokkerplanck"></div>
+							<script>
+								katex.render("\\tau \\partial_t P(V,t) = \\frac{\\sigma^2(t)}{2} \\partial^2_V P(V,t) + \\partial_V [(V-\\mu_a(t))P_a(V,t)]", document.getElementById("fokkerplanck"), { displayMode: true });
+							</script>
+						</section>
 				</section>
 
 				<section>
@@ -106,7 +117,16 @@
 						<h2>Coding and decoding</h2>
 					</section>
 					<section>
-
+						<ul>
+								<li>Discrimination</li>
+								<li>Population Decoding [TODO: Pretty Pictures]</li>
+								<li>Spike train decoding</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Visual receptive fields [TODO: Include pretty pictures here]</li>
+						</ul>
 					</section>
 				</section>
 				<section>
@@ -114,7 +134,11 @@
 						<h2>Reservoir computing</h2>
 					</section>
 					<section>
-
+						<ul>
+							<li>Essentially study of large dynamical system formed from simple components with random connections.</li>
+							<li>In particular applicable to the case where the components are simple point neuron models.</li>
+							<li>Readout is trained by some classical method (for example linear regression).</li>
+						</ul>
 					</section>
 				</section>
 				<section>
@@ -122,7 +146,19 @@
 						<h2>Anatomy of the Brain</h2>
 					</section>
 					<section>
-						
+						<img src="img/neural_slice_preview.jpg"></img>
+					</section>
+					<section>
+						<ul>
+							<li>layer structure</li>
+							<li>interneurons</li>
+							<li>winner take all subnetworks</li>
+							<li>topographical maps</li>
+							<li>sensory processing</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/retinopique.jpg"></img>
 					</section>
 				</section>
 				<section>
@@ -130,7 +166,9 @@
 						<h2>Self-Organizing Maps</h2>
 					</section>
 					<section>
-						
+						<video controls="True">
+							<source src="http://www.labri.fr/perso/nrougier/coding/article/movies/sphere.ogg"></source>
+						</video>
 					</section>
 				</section>
 				<section>
@@ -138,6 +176,7 @@
 						<h2>Neural Sampling + LIF Sampling</h2>
 					</section>
 					<section>
+						[Pictures]
 					</section>
 				</section>
 				<section>
@@ -145,13 +184,15 @@
 						<h2>Deep learning</h2>
 					</section>
 					<section>
+						<img src="img/googlelenet.jpg"></img>
 					</section>
 				</section>
 				<section>
 					<section>
-						<h2>Spike-based Expectation Maxiization</h2>
+						<h2>Spike-based Expectation Maximization</h2>
 					</section>
 					<section>
+						<p>[Pictures]</p>
 					</section>
 				</section>
 			</div>
@@ -159,7 +200,7 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-		
+
 
 		<script>
 
